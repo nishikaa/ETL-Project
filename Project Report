@@ -12,7 +12,7 @@ For easy access and reference in later analysis, we rename the keys names.Finall
 
 ## Load
 
-With the information we have, we were able to creat two relational databases basketball_db with six tables inside:players,awards and salaries and NBA_DB with three tables inside:teams_master,teams_summary and coaches_master.
+With the information we have, we were able to creat two relational databases basketball_db with three tables inside:players,awards and salaries and NBA_DB with three tables inside:teams_master,teams_summary and coaches_master.
 
 We load the data previously cleaned up to the above database and confirm all the data is loaded successfully.
 
