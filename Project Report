@@ -8,15 +8,16 @@ The sources we are using in this project is csv files from Kaggle (https://www.k
 ## Transform
 
 After reading each csv file to python and create a dataframe, we find out each csv file has much more information than we neede, so we clean the data by dropping those unnecessary and duplicated information. 
-For easy access and reference in later analysis, we rename the keys names.Finally, we have three dataframes with cleaned data:players_df; awards_df; salary_df 
+For easy access and reference in later analysis, we rename the keys names.Finally, we have six dataframes with cleaned data:players_df; awards_df; salary_df; teams_master_df; coaches_master_df;team_summary_df.
 
 ## Load
 
-With the information we have, we were able to creat a relational database basketball_db with three tables inside:players,awards and salaries.
+With the information we have, we were able to creat two relational databases basketball_db with three tables inside:players,awards and salaries and NBA_DB with three tables inside:teams_master,teams_summary and coaches_master.
 
 We load the data previously cleaned up to the above database and confirm all the data is loaded successfully.
 
-Some queries were done across the relational database and we were able to get a complete dataframe with all the players' information we are interested including player_id, last_name, first_name, awards_count and max salary.
+Some queries were done across the relational database and we were able to get a complete dataframe with all the players' information we are interested including player_id, last_name, first_name, awards_count and max salary. When summarizing the coaches master, we combined 
+coaches awards details in to the coaches details. So the complete coaches_master has all the information about the coaches including their award details. 
 
 # Analysis
 Get a tableframe with data about top players with more than ten awards 
